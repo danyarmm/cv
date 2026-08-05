@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Danyar Mahdi Rostam | CV</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --navy:#0b2a4a;
+      --navy2:#123b63;
+      --ink:#142033;
+      --muted:#5f6b7a;
+      --line:#e7ebf0;
+      --soft:#f6f8fb;
+    }
+    html { scroll-behavior:smooth; }
+    body {
+      margin:0;
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      color:var(--ink);
+      background: linear-gradient(180deg,#eef3f8 0%,#f8fafc 42%,#eef3f8 100%);
+    }
+    .paper {
+      width:min(1180px, calc(100vw - 24px));
+      box-shadow: 0 24px 70px rgba(15,23,42,.10);
+      background:white;
+      border:1px solid #dfe7f0;
+      overflow:hidden;
+      border-radius: 28px;
+    }
+    .hero-grad {
+      background:
+        radial-gradient(1200px circle at 10% 10%, rgba(77,150,255,.18), transparent 35%),
+        linear-gradient(135deg, var(--navy) 0%, #0f3358 50%, #123b63 100%);
+    }
+    .section-title { letter-spacing:.12em; }
+    .pill { background:#f2f6fb; border:1px solid #d8e1ec; }
+    .bar { height:10px; border-radius:999px; background:#dfe7f0; overflow:hidden; }
+    .bar > span { display:block; height:100%; border-radius:999px; background: linear-gradient(90deg, #4c8bf5, #2f67d8); }
+    .dot { width:10px; height:10px; border-radius:999px; background:#2563eb; box-shadow:0 0 0 8px #eff6ff; }
+    .aside {
+      background: #091c33;
+      color: white;
+    }
+    .muted { color: #dbe7f2; }
+    .soft-card {
+      background: #f8fbff;
+      border: 1px solid #dfe7f0;
+    }
+    .floating {
+      box-shadow: 0 20px 45px rgba(15,23,42,.16);
+    }
+    @media print {
+      body { background:#fff !important; }
+      .no-print { display:none !important; }
+      .paper { width:100% !important; border:none !important; box-shadow:none !important; border-radius:0 !important; }
+      a { color:inherit; text-decoration:none; }
+      .avoid-break { break-inside:avoid; }
+      .page-break { break-before: page; }
+    }
+  </style>
+</head>
+<body>
+  <div class="no-print sticky top-0 z-50 border-b border-slate-200 bg-white/90 backdrop-blur">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between gap-3">
+      <div>
+        <div class="text-sm font-semibold text-slate-900">Danyar Mahdi Rostam</div>
+        <div class="text-xs text-slate-500">Classic CV • A4 print ready</div>
+      </div>
+      <button onclick="window.print()" class="inline-flex items-center gap-2 rounded-xl bg-slate-900 px-4 py-2 text-white text-sm font-semibold hover:bg-slate-800 transition">
+        <i data-lucide="printer" class="w-4 h-4"></i>
+        Print / Save PDF
+      </button>
+    </div>
+  </div>
+
+  <main class="mx-auto p-3 md:p-6 lg:p-8">
+    <section class="paper">
+      <header class="hero-grad text-white px-6 md:px-8 lg:px-10 py-8 md:py-10">
+        <div class="grid lg:grid-cols-[1.2fr_.8fr] gap-6 items-center">
+          <div class="space-y-5">
+            <div class="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.22em] text-white/85">
+              <i data-lucide="badge-check" class="w-4 h-4"></i>
+              IT Graduate | Developer | Office Support
+            </div>
+            <div>
+              <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight leading-tight">Danyar Mahdi Rostam</h1>
+              <p class="mt-3 max-w-2xl text-white/82 text-base md:text-lg leading-7">
+                I am an IT graduate with hands-on experience in office work, data entry, and technical tasks.
+                I work carefully, keep information organized, and learn new tools quickly.
+              </p>
+            </div>
+            <div class="grid sm:grid-cols-3 gap-3 text-sm">
+              <div class="rounded-2xl border border-white/15 bg-white/8 px-4 py-3">
+                <div class="text-white/65 text-xs uppercase tracking-[0.18em]">Phone</div>
+                <div class="mt-1 font-semibold">07707655666</div>
+              </div>
+              <div class="rounded-2xl border border-white/15 bg-white/8 px-4 py-3">
+                <div class="text-white/65 text-xs uppercase tracking-[0.18em]">Email</div>
+                <div class="mt-1 font-semibold break-all">danyar.mahde00@gmail.com</div>
+              </div>
+              <div class="rounded-2xl border border-white/15 bg-white/8 px-4 py-3">
+                <div class="text-white/65 text-xs uppercase tracking-[0.18em]">Location</div>
+                <div class="mt-1 font-semibold">Sulaymaniyah, Iraq</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="lg:justify-self-end w-full max-w-md">
+            <div class="rounded-[28px] border border-white/15 bg-white/10 p-4 floating">
+              <div class="rounded-[22px] bg-white p-3">
+                <img src="images/danyar.jpg" alt="Danyar photo" class="aspect-[3/4] w-full rounded-[18px] object-cover object-top" />
+              </div>
+              <div class="mt-4 grid grid-cols-2 gap-3 text-xs">
+                <div class="rounded-2xl bg-white/10 border border-white/15 px-4 py-3">
+                  <div class="text-white/65 uppercase tracking-[0.16em]">Birth Date</div>
+                  <div class="mt-1 font-semibold">20/05/2004</div>
+                </div>
+                <div class="rounded-2xl bg-white/10 border border-white/15 px-4 py-3">
+                  <div class="text-white/65 uppercase tracking-[0.16em]">Driving</div>
+                  <div class="mt-1 font-semibold">Yes, own car</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <div class="grid lg:grid-cols-[340px_1fr]">
+        <aside class="aside px-6 md:px-8 py-8 space-y-8">
+          <section>
+            <h2 class="section-title text-xs font-bold uppercase text-sky-300 mb-4">Contact</h2>
+            <div class="space-y-4 text-sm muted">
+              <div class="flex gap-3"><i data-lucide="phone" class="w-4 h-4 mt-0.5 text-sky-300"></i><span>07707655666</span></div>
+              <div class="flex gap-3"><i data-lucide="mail" class="w-4 h-4 mt-0.5 text-sky-300"></i><span>danyar.mahde00@gmail.com</span></div>
+              <div class="flex gap-3"><i data-lucide="map-pin" class="w-4 h-4 mt-0.5 text-sky-300"></i><span>Sulaymaniyah, Kurdistan Region, Iraq</span></div>
+              <div class="flex gap-3"><i data-lucide="car-front" class="w-4 h-4 mt-0.5 text-sky-300"></i><span>Driving license: Yes</span></div>
+            </div>
+          </section>
+
+          <section>
+            <h2 class="section-title text-xs font-bold uppercase text-sky-300 mb-4">Core Competencies</h2>
+            <div class="space-y-5">
+              <div>
+                <div class="text-sm font-semibold text-white mb-2">Office Skills</div>
+                <div class="flex flex-wrap gap-2">
+                  <span class="pill rounded-full px-3 py-1 text-xs text-slate-800">Data Entry</span>
+                  <span class="pill rounded-full px-3 py-1 text-xs text-slate-800">Excel</span>
+                  <span class="pill rounded-full px-3 py-1 text-xs text-slate-800">Word</span>
+                  <span class="pill rounded-full px-3 py-1 text-xs text-slate-800">Record Keeping</span>
+                  <span class="pill rounded-full px-3 py-1 text-xs text-slate-800">File Management</span>
+                  <span class="pill rounded-full px-3 py-1 text-xs text-slate-800">Typing</span>
+                </div>
+              </div>
+              <div>
+                <div class="text-sm font-semibold text-white mb-2">Technical Skills</div>
+                <div class="flex flex-wrap gap-2">
+                  <span class="pill rounded-full px-3 py-1 text-xs text-slate-800">Python</span>
+                  <span class="pill rounded-full px-3 py-1 text-xs text-slate-800">PHP</span>
+                  <span class="pill rounded-full px-3 py-1 text-xs text-slate-800">C#</span>
+                  <span class="pill rounded-full px-3 py-1 text-xs text-slate-800">JavaScript</span>
+                  <span class="pill rounded-full px-3 py-1 text-xs text-slate-800">HTML5</span>
+                  <span class="pill rounded-full px-3 py-1 text-xs text-slate-800">CSS3</span>
+                  <span class="pill rounded-full px-3 py-1 text-xs text-slate-800">Tailwind CSS</span>
+                  <span class="pill rounded-full px-3 py-1 text-xs text-slate-800">Bootstrap</span>
+                </div>
+              </div>
+              <div>
+                <div class="text-sm font-semibold text-white mb-2">Database Skills</div>
+                <div class="flex flex-wrap gap-2">
+                  <span class="pill rounded-full px-3 py-1 text-xs text-slate-800">SQL</span>
+                  <span class="pill rounded-full px-3 py-1 text-xs text-slate-800">MySQL</span>
+                  <span class="pill rounded-full px-3 py-1 text-xs text-slate-800">Database Management</span>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section>
+            <h2 class="section-title text-xs font-bold uppercase text-sky-300 mb-4">Languages</h2>
+            <div class="space-y-4 text-sm">
+              <div>
+                <div class="flex justify-between mb-1"><span>Kurdish (Sorani)</span><span>Native</span></div>
+                <div class="bar"><span style="width:100%"></span></div>
+              </div>
+              <div>
+                <div class="flex justify-between mb-1"><span>English</span><span>B2</span></div>
+                <div class="bar"><span style="width:72%"></span></div>
+              </div>
+              <div>
+                <div class="flex justify-between mb-1"><span>Arabic</span><span>Basic</span></div>
+                <div class="bar"><span style="width:35%"></span></div>
+              </div>
+            </div>
+          </section>
+        </aside>
+
+        <section class="px-6 md:px-8 lg:px-10 py-8 space-y-10">
+          <article class="avoid-break">
+            <div class="flex items-center gap-3 mb-4">
+              <div class="h-11 w-11 rounded-full bg-sky-50 text-sky-700 flex items-center justify-center border border-sky-100"><i data-lucide="user-round" class="w-5 h-5"></i></div>
+              <h2 class="text-2xl font-extrabold text-slate-900">Profile</h2>
+            </div>
+            <p class="text-slate-700 leading-8 max-w-3xl">
+              I am an IT graduate with experience in data entry and office support. I worked in a busy office where accuracy,
+              organization, and teamwork were important every day. I am comfortable using computers, Excel, and other office tools,
+              and I learn new systems quickly. I am a hardworking and responsible person who always tries to do the job correctly and on time.
+            </p>
+          </article>
+
+          <article class="avoid-break">
+            <div class="flex items-center gap-3 mb-5">
+              <div class="h-11 w-11 rounded-full bg-sky-50 text-sky-700 flex items-center justify-center border border-sky-100"><i data-lucide="briefcase-business" class="w-5 h-5"></i></div>
+              <h2 class="text-2xl font-extrabold text-slate-900">Experience</h2>
+            </div>
+
+            <div class="relative pl-8 border-l-2 border-slate-200 space-y-8">
+              <div class="relative">
+                <div class="absolute -left-[41px] top-2 h-4 w-4 rounded-full bg-sky-600 ring-8 ring-sky-50"></div>
+                <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-2">
+                  <div>
+                    <h3 class="text-lg font-bold text-slate-900">Office Assistant / Data Entry</h3>
+                    <div class="text-sky-700 font-semibold">Speed Post</div>
+                  </div>
+                  <div class="text-sm text-slate-500 md:text-right">
+                    <div class="inline-flex items-center gap-2"><i data-lucide="calendar-days" class="w-4 h-4"></i> 4 months</div>
+                    <div class="mt-1 inline-flex items-center gap-2"><i data-lucide="map-pin" class="w-4 h-4"></i> Sulaymaniyah, Iraq</div>
+                  </div>
+                </div>
+                <ul class="mt-4 space-y-2 text-slate-700 leading-7 list-disc ml-5">
+                  <li>Entered customer details such as names, phone numbers, locations, and payment information.</li>
+                  <li>Printed shipping labels for outgoing parcels.</li>
+                  <li>Used Microsoft Excel to update and organize records.</li>
+                  <li>Kept data accurate and handled daily tasks carefully.</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <article class="avoid-break">
+            <div class="flex items-center gap-3 mb-5">
+              <div class="h-11 w-11 rounded-full bg-sky-50 text-sky-700 flex items-center justify-center border border-sky-100"><i data-lucide="graduation-cap" class="w-5 h-5"></i></div>
+              <h2 class="text-2xl font-extrabold text-slate-900">Education</h2>
+            </div>
+            <div class="rounded-3xl border border-slate-200 bg-slate-50 p-5 md:p-6">
+              <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-3">
+                <div>
+                  <h3 class="text-lg font-bold text-slate-900">Diploma in Information Security / Computer Science</h3>
+                  <div class="text-sky-700 font-semibold">Technical Institute of Sulaymaniyah</div>
+                </div>
+                <div class="text-sm text-slate-500 md:text-right">
+                  <div class="inline-flex items-center gap-2"><i data-lucide="calendar-days" class="w-4 h-4"></i> Graduated in 2026</div>
+                  <div class="mt-1 inline-flex items-center gap-2"><i data-lucide="map-pin" class="w-4 h-4"></i> Sulaymaniyah, Iraq</div>
+                </div>
+              </div>
+              <p class="mt-4 text-slate-700 leading-7">
+                Completed practical study related to computer systems, information security, and basic technical work.
+              </p>
+            </div>
+          </article>
+
+          <article class="avoid-break">
+            <div class="flex items-center gap-3 mb-5">
+              <div class="h-11 w-11 rounded-full bg-sky-50 text-sky-700 flex items-center justify-center border border-sky-100"><i data-lucide="info" class="w-5 h-5"></i></div>
+              <h2 class="text-2xl font-extrabold text-slate-900">Additional Information</h2>
+            </div>
+            <div class="grid md:grid-cols-2 gap-4">
+              <div class="rounded-3xl border border-slate-200 p-5 bg-slate-50">
+                <div class="grid grid-cols-2 gap-3 text-sm">
+                  <div><span class="font-semibold text-slate-900">Date of Birth:</span> 20/05/2004</div>
+                  <div><span class="font-semibold text-slate-900">Driving:</span> Yes, own car</div>
+                  <div><span class="font-semibold text-slate-900">Nationality:</span> Iraqi</div>
+                  <div><span class="font-semibold text-slate-900">Military Service:</span> Exempted</div>
+                </div>
+              </div>
+              <div class="rounded-3xl border border-slate-200 p-5 bg-slate-50">
+                <div class="grid grid-cols-1 gap-3 text-sm">
+                  <div><span class="font-semibold text-slate-900">Work style:</span> Organized, detail-oriented, and able to work under pressure.</div>
+                  <div><span class="font-semibold text-slate-900">Strengths:</span> Fast learner, responsible, team player, good communicator.</div>
+                  <div><span class="font-semibold text-slate-900">Interests:</span> Technology, programming, automation, and learning new tools.</div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="avoid-break">
+            <div class="flex items-center gap-3 mb-4">
+              <div class="h-11 w-11 rounded-full bg-sky-50 text-sky-700 flex items-center justify-center border border-sky-100"><i data-lucide="users-round" class="w-5 h-5"></i></div>
+              <h2 class="text-2xl font-extrabold text-slate-900">References</h2>
+            </div>
+            <p class="text-slate-700 leading-7">References available upon request.</p>
+          </article>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    lucide.createIcons();
+
+    const classicBtn = document.getElementById('classicBtn');
+    const modernBtn = document.getElementById('modernBtn');
+    const classicView = document.getElementById('classicView');
+    const modernView = document.getElementById('modernView');
+
+    function setMode(mode) {
+      const classic = mode === 'classic';
+      classicView.classList.toggle('hidden', !classic);
+      modernView.classList.toggle('hidden', classic);
+      classicBtn.className = classic
+        ? 'tab-active inline-flex items-center gap-2 rounded-xl px-4 py-2 text-sm font-semibold transition'
+        : 'tab-inactive inline-flex items-center gap-2 rounded-xl px-4 py-2 text-sm font-semibold transition';
+      modernBtn.className = !classic
+        ? 'tab-active inline-flex items-center gap-2 rounded-xl px-4 py-2 text-sm font-semibold transition'
+        : 'tab-inactive inline-flex items-center gap-2 rounded-xl px-4 py-2 text-sm font-semibold transition';
+    }
+
+    classicBtn.addEventListener('click', () => setMode('classic'));
+    modernBtn.addEventListener('click', () => setMode('modern'));
+    setMode('classic');
+  </script>
+</body>
+</html>
